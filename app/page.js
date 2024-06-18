@@ -62,7 +62,7 @@ const page = () => {
             />
             <button
               onClick={calculateAge}
-              className="bg-[#ffff76] hover:bg-yellow-900: border-none outline-none py-[15px] px-[30px] rounded-[5px] font-medium text-[#333] cursor-pointer"
+              className="bg-[#ffff76] hover:bg-yellow-200 duration-300 border-none outline-none py-[15px] px-[30px] rounded-[5px] font-medium text-[#333] cursor-pointer"
             >
               Calculate
             </button>
