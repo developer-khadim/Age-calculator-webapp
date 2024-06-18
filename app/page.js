@@ -1,5 +1,8 @@
 "use client";
 import React, { useRef, useEffect, useState } from "react";
+import { FaGithub } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaFacebookSquare } from "react-icons/fa";
 
 const page = () => {
   const userInputRef = useRef(null);
@@ -67,13 +70,40 @@ const page = () => {
               Calculate
             </button>
           </div>
-          <p className="text-xl" >Yor are <span>{age.years}</span> Year's <span>{age.months}</span> Months and <span>{age.days}</span> Days old</p>
+          <p className="text-xl">
+            Yor are <span>{age.years}</span> Year's <span>{age.months}</span>{" "}
+            Months and <span>{age.days}</span> Days old
+          </p>
+          <div className="mt-3 w-[21vw] ">
+            <h1>🌐 Don't forget to check out my social media links! 🔗👩‍💻 </h1>
+            <div className="flex justify-center gap-10 mt-2 ">
+              <a
+                target="_blank"
+                href="https://github.com/developer-khadim"
+                className="text-2xl"
+              >
+                <FaGithub />
+              </a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/khadim-ali-a7b483294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                className="text-2xl hover:text-gray-200"
+              >
+                <FaLinkedin />
+              </a>
+              <a
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=100082838006573&mibextid=ZbWKwL"
+                className="text-2xl hover:text-gray-200"
+              >
+                <FaFacebookSquare />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default page
-
- 
+export default page;
