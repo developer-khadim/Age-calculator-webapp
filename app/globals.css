@@ -2,32 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.cantainer{
+  background: linear-gradient(135deg,#4203a9 ,#90bafc);
+}
+.input-box{
+  background: #ffffff4d;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.input-box input::-webkit-calendar-picker-indicator {
+  top: 0;
+  left:0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  position: absolute;
+  background-position: calc(100% -10px);
+background-size: 30px;
+cursor: pointer;
+ opacity: 0;
+}
+span{
+  color: #ffff76;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
