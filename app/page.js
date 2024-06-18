@@ -2,7 +2,7 @@
 import React, { useRef, useEffect, useState } from "react";
 
 const page = () => {
-   const userInputRef = useRef(null);
+  const userInputRef = useRef(null);
   const [age, setAge] = useState({ years: 0, months: 0, days: 0 });
   useEffect(() => {
     const today = new Date();
@@ -46,7 +46,7 @@ const page = () => {
   };
 
   return (
-    <>
+    <div>
       <div className="cantainer w-[100%] min-h-[100vh] text-[#fff] p-[10px] ">
         <div className="calculator  w-[100%] max-w-[600px] ml-[10%] mt-[10%]">
           <h1 className="text-[60px] font-bold ">
@@ -70,8 +70,10 @@ const page = () => {
           <p className="text-xl" >Yor are <span>{age.years}</span> Year's <span>{age.months}</span> Months and <span>{age.days}</span> Days old</p>
         </div>
       </div>
-    </>
-  );
+    </div>
+  )
 }
 
 export default page
+
+ 
